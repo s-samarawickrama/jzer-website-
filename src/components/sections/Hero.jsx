@@ -4,7 +4,12 @@ const Hero = () => {
   return (
     <section id="hero">
       <div className="hero-banner-wrap">
-        <img src="/JEWEL_OF_YOUR_BEAUTY_(4)_(1) (3).png" alt="JZER Salon" className="hero-banner-img" />
+        <img 
+          src="/JEWEL_OF_YOUR_BEAUTY_(4)_(1) (3).png" 
+          alt="JZER Salon" 
+          className="hero-banner-img" 
+          style={{ objectFit: 'cover', objectPosition: 'center', height: '100%', width: '100%', position: 'absolute', inset: 0 }}
+        />
       </div>
 
       <div className="hero-content-bottom">
