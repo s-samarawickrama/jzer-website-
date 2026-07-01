@@ -1,0 +1,28 @@
+import React, { useState } from 'react';
+import { Menu, X } from 'lucide-react';
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <nav>
+      <img src="/jzer-logo-shatter.png" alt="JZER" style={{ height: '32px' }} />
+      
+      <div className={`nav-links ${isOpen ? 'mobile-open' : ''}`}>
+        <a href="#" onClick={() => setIsOpen(false)}>About</a>
+        <a href="#" onClick={() => setIsOpen(false)}>Services</a>
+        <a href="#" onClick={() => setIsOpen(false)}>Gallery</a>
+        <a href="#" onClick={() => setIsOpen(false)}>Testimonials</a>
+      </div>
+
+      <div className="nav-actions">
+        <button className="btn-book">Book Now</button>
+        <button className="mobile-menu-btn" onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <X size={24} color="#fff" /> : <Menu size={24} color="#fff" />}
+        </button>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
