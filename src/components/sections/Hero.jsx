@@ -5,7 +5,7 @@ const Hero = () => {
     <section id="hero">
       <div className="hero-banner-wrap">
         <picture>
-          <source media="(max-width: 768px)" srcSet="/Gemini_Generated_Image_rurdhcrurdhcrurd%202.png" />
+          <source media="(max-width: 768px)" srcSet="/Gemini_Generated_Image_rurdhcrurdhcrurd%203.png" />
           <img src="/Gemini_Generated_Image_rurdhcrurdhcrurd (1).png" alt="Background" className="hero-banner-img" />
         </picture>
       </div>
