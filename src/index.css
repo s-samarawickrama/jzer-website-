@@ -945,6 +945,10 @@ footer p {
   #bg {
     pointer-events: none;
   }
+  .hero-center-logo {
+    top: 35%;
+    width: 280px;
+  }
   .hero-banner-wrap {
     position: absolute;
     inset: 0;
