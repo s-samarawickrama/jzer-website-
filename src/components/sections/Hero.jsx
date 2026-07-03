@@ -4,7 +4,10 @@ const Hero = () => {
   return (
     <section id="hero">
       <div className="hero-banner-wrap">
-        <img src="/Gemini_Generated_Image_rurdhcrurdhcrurd (1).png" alt="Background" className="hero-banner-img" />
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/Gemini_Generated_Image_rurdhcrurdhcrurd%202.png" />
+          <img src="/Gemini_Generated_Image_rurdhcrurdhcrurd (1).png" alt="Background" className="hero-banner-img" />
+        </picture>
       </div>
       
       <img src="/jzer-logo-1.png" alt="JZER Salon Logo" className="hero-center-logo" />
