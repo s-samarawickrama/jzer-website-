@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <img src="/jzer-logo-shatter.png" alt="JZER" style={{ height: '32px' }} />
+      <img src="/jzer-logo.svg" alt="JZER" style={{ height: '32px' }} />
       
       <div className={`nav-links ${isOpen ? 'mobile-open' : ''}`}>
         <a href="#" onClick={() => setIsOpen(false)}>About</a>
