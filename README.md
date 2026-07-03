@@ -6,9 +6,27 @@ This is a modern, interactive web application for the JZER Salon, built with hig
 
 - **Framework**: React 19 (via Vite)
 - **3D Rendering**: Three.js, `@react-three/fiber`, `@react-three/drei`
-- **Styling**: Vanilla CSS (`index.css`) with custom fonts (Oswald, Outfit), CSS variables, and modern glassmorphism techniques.
+- **Styling**: Vanilla CSS (`index.css`) with custom fonts (Cinzel, Montserrat), CSS variables, and modern glassmorphism techniques.
 - **Icons**: Lucide React
 - **Architecture Pattern**: Component-Based Architecture separating global UI (Cursor, Particles, Background), Layouts (Navbar, Footer), and Sections (Hero, Services, About, Testimonials).
+
+## Design System & Styling
+
+The app uses a premium, luxury design system implemented entirely in CSS without relying on heavy frameworks:
+
+### Fonts
+- **Cinzel**: Used for headings and primary titles to convey elegance and sophistication.
+- **Montserrat**: Used for body text, buttons, and navigation for clean readability and a modern aesthetic.
+
+### Color Palette
+- **Deep Space Black (`#050505`)**: The primary background color.
+- **Butter Gold (`#f5d97a`)**: The primary accent color used for buttons, hover glows, and highlights.
+- **Silver / Off-White (`#e0e0e0`, `#f5f5f5`)**: Used for primary readable text against the dark backgrounds.
+
+### Visual Effects
+- **Glassmorphism**: Service cards and UI panels use `backdrop-filter: blur()` combined with semi-transparent backgrounds to create a frosted glass effect over the 3D canvas.
+- **Glow Effects**: Extensive use of layered `box-shadow` and `text-shadow` in hover states to simulate premium lighting.
+- **Custom Cursor**: A completely custom, react-driven inverted cursor that interacts uniquely with hovering over links.
 
 ## File Structure
 
