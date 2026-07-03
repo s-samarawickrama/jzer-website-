@@ -943,7 +943,10 @@ footer p {
     min-height: 100vh;
   }
   #bg {
-    pointer-events: none;
+    display: none;
+  }
+  .hero-content-bottom {
+    margin-bottom: 60px;
   }
   .hero-center-logo {
     top: 35%;
