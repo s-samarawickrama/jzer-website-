@@ -1,11 +1,18 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useState, useEffect } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Environment, OrbitControls, useTexture } from '@react-three/drei';
 import * as THREE from 'three';
 import bgB64 from '../../../public/mr0rk52y.png?b64';
 
 const Scene = () => {
-  const isMobile = window.innerWidth <= 768;
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const texture = useTexture(bgB64); 
   texture.mapping = THREE.EquirectangularReflectionMapping;
   texture.colorSpace = THREE.SRGBColorSpace;
@@ -29,11 +36,9 @@ const Scene = () => {
 };
 
 const Background = () => {
-  const isMobile = window.innerWidth <= 768;
-  
   return (
     <div id="bg" style={{ position: 'fixed', inset: 0, zIndex: 0 }}>
-      <Canvas camera={{ position: isMobile ? [5, 0, 0] : [0, 0, 5] }}>
+      <Canvas camera={{ position: [0, 0, 5] }}>
         <Suspense fallback={null}>
           <Scene />
         </Suspense>

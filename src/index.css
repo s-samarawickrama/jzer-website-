@@ -286,6 +286,7 @@ nav {
   z-index: 0;
   opacity: 0;
   animation: riseIn .9s .3s forwards;
+  pointer-events: none;
 }
 
 @keyframes bannerZoom {
@@ -943,8 +944,11 @@ footer p {
     min-height: 100vh;
   }
   #bg {
-    pointer-events: none;
     display: block;
+    pointer-events: none !important;
+  }
+  #bg * {
+    pointer-events: none !important;
   }
   #bg canvas {
     touch-action: auto !important;
