@@ -190,7 +190,7 @@ nav {
   text-decoration: none;
   position: relative;
   padding-bottom: 3px;
-  transition: color .3s
+  transition: color .3s, text-shadow .3s
 }
 
 .nav-links a::after {
@@ -204,15 +204,18 @@ nav {
   box-shadow: 0 0 6px rgba(245, 217, 122, .6);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform .35s var(--r)
+  transition: transform .35s var(--r), background .35s, box-shadow .35s
 }
 
 .nav-links a:hover {
-  color: #fff
+  color: var(--butter);
+  text-shadow: 0 0 10px rgba(245, 230, 168, 0.3);
 }
 
 .nav-links a:hover::after {
-  transform: scaleX(1)
+  transform: scaleX(1);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 15px rgba(245, 217, 122, 0.5);
 }
 
 .btn-book {
