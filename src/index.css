@@ -946,6 +946,9 @@ footer p {
     pointer-events: none;
     display: block;
   }
+  #bg canvas {
+    touch-action: auto !important;
+  }
   .hero-content-bottom {
     margin-bottom: 60px;
   }

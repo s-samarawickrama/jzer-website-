@@ -5,6 +5,7 @@ import * as THREE from 'three';
 import bgB64 from '../../../public/mr0rk52y.png?b64';
 
 const Scene = () => {
+  const isMobile = window.innerWidth <= 768;
   const texture = useTexture(bgB64); 
   texture.mapping = THREE.EquirectangularReflectionMapping;
   texture.colorSpace = THREE.SRGBColorSpace;
@@ -16,7 +17,13 @@ const Scene = () => {
   return (
     <>
       <Environment map={texture} background />
-      <OrbitControls autoRotate autoRotateSpeed={0.5} enableZoom={false} />
+      <OrbitControls 
+        autoRotate 
+        autoRotateSpeed={0.5} 
+        enableZoom={false} 
+        enablePan={!isMobile} 
+        enableRotate={!isMobile} 
+      />
     </>
   );
 };
