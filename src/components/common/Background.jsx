@@ -22,9 +22,11 @@ const Scene = () => {
 };
 
 const Background = () => {
+  const isMobile = window.innerWidth <= 768;
+  
   return (
     <div id="bg" style={{ position: 'fixed', inset: 0, zIndex: 0 }}>
-      <Canvas>
+      <Canvas camera={{ position: isMobile ? [5, 0, 0] : [0, 0, 5] }}>
         <Suspense fallback={null}>
           <Scene />
         </Suspense>
