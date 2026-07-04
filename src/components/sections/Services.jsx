@@ -65,7 +65,7 @@ const Services = () => {
           <span className="menu-icon"><ScissorsIcon size={24} /></span>
           <div className="menu-content">
             <div className="menu-title-row">
-              <span className="menu-name">Hair Dyeing (Grey Coverage)</span>
+              <span className="menu-name">Hair Dyeing (Grey Coverage) with Hair Cut</span>
               <div className="menu-dots"></div>
               <span className="menu-price">900 LKR</span>
             </div>
