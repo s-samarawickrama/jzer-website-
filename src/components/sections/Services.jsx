@@ -43,11 +43,11 @@ const Services = () => {
           <span className="menu-icon"><ScissorsIcon size={24} /></span>
           <div className="menu-content">
             <div className="menu-title-row">
-              <span className="menu-name">Hair & Beard with Massage</span>
+              <span className="menu-name">Hair & Beard</span>
               <div className="menu-dots"></div>
               <span className="menu-price">700 LKR</span>
             </div>
-            <div className="menu-desc">Includes a quick 5-min massage</div>
+            <div className="menu-desc">Includes a complimentary 5-min massage</div>
           </div>
         </div>
 
