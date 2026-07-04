@@ -9,10 +9,11 @@ const Navbar = () => {
       <img src="/jzer-logo.svg" alt="JZER" style={{ height: '32px' }} />
       
       <div className={`nav-links ${isOpen ? 'mobile-open' : ''}`}>
-        <a href="#" onClick={() => setIsOpen(false)}>About</a>
-        <a href="#" onClick={() => setIsOpen(false)}>Services</a>
-        <a href="#" onClick={() => setIsOpen(false)}>Gallery</a>
-        <a href="#" onClick={() => setIsOpen(false)}>Testimonials</a>
+        <a href="#founder" onClick={() => setIsOpen(false)}>Story</a>
+        <a href="#services" onClick={() => setIsOpen(false)}>Services</a>
+        <a href="#gallery" onClick={() => setIsOpen(false)}>Gallery</a>
+        <a href="#testi" onClick={() => setIsOpen(false)}>Reviews</a>
+        <a href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
       </div>
 
       <div className="nav-actions">
