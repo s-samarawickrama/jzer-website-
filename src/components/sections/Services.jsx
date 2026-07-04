@@ -47,6 +47,7 @@ const Services = () => {
               <div className="menu-dots"></div>
               <span className="menu-price">700 LKR</span>
             </div>
+            <div className="menu-desc">Includes a quick 5-min massage</div>
           </div>
         </div>
 
@@ -58,6 +59,7 @@ const Services = () => {
               <div className="menu-dots"></div>
               <span className="menu-price">800 LKR</span>
             </div>
+            <div className="menu-desc">A full, dedicated relaxation treatment</div>
           </div>
         </div>
 
