@@ -877,6 +877,296 @@ footer p {
   letter-spacing: .06em
 }
 
+/* ── Founder Story ── */
+#founder {
+  padding: 100px 48px;
+  display: flex;
+  justify-content: center;
+}
+.founder-g {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1100px;
+  width: 100%;
+  align-items: center;
+}
+.founder-img-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 120%; /* Portrait aspect ratio */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.founder-placeholder {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(145deg, rgba(20,20,20,0.8), rgba(10,10,10,0.9));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.founder-placeholder::after {
+  content: 'Founder Portrait';
+  color: rgba(255, 255, 255, 0.1);
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+}
+.sec-title-left {
+  font-family: 'Cinzel', sans-serif;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  letter-spacing: .02em;
+  margin-bottom: 30px;
+}
+.founder-p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: rgba(216, 216, 216, 0.7);
+  margin-bottom: 24px;
+}
+.signature {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.sig-line {
+  width: 40px;
+  height: 1px;
+  background: var(--butter);
+}
+.signature span {
+  font-family: 'Cinzel', serif;
+  color: var(--butter);
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+/* ── Gallery ── */
+#gallery {
+  padding: 100px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery-sub {
+  font-size: 1rem;
+  color: rgba(216, 216, 216, 0.5);
+  margin-bottom: 60px;
+  text-align: center;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+.gallery-item {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* Square */
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  cursor: none;
+}
+.gallery-placeholder {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(15, 15, 15, 0.8);
+  transition: transform 0.5s ease;
+}
+.gallery-item:hover .gallery-placeholder {
+  transform: scale(1.05);
+  background: rgba(20, 20, 20, 0.9);
+}
+
+/* ── TikTok Teaser ── */
+#tiktok-teaser {
+  padding: 100px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(ellipse at center, rgba(15,15,15,0.4) 0%, transparent 70%);
+}
+.tiktok-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  width: 100%;
+}
+.tiktok-item {
+  position: relative;
+  width: 100%;
+  padding-bottom: 177%; /* 9:16 aspect ratio */
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tiktok-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6), 0 0 15px rgba(245, 217, 122, 0.15);
+}
+.tiktok-placeholder {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(10, 10, 10, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.play-overlay {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: transform 0.3s, background 0.3s;
+}
+.tiktok-item:hover .play-overlay {
+  transform: scale(1.1);
+  background: rgba(245, 217, 122, 0.2);
+  border-color: rgba(245, 217, 122, 0.4);
+}
+.tiktok-item:hover .play-overlay svg {
+  fill: var(--butter);
+}
+
+/* ── Contact ── */
+#contact {
+  padding: 100px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-g {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1000px;
+  width: 100%;
+  background: rgba(10, 10, 10, 0.42);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.5);
+  border-radius: 22px;
+  padding: 50px;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.c-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.c-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(245, 217, 122, 0.05);
+  border: 1px solid rgba(245, 217, 122, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--butter);
+}
+.c-text {
+  font-size: 0.95rem;
+  color: rgba(216, 216, 216, 0.8);
+}
+.c-socials {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.c-socials-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(216, 216, 216, 0.4);
+  margin-right: 10px;
+}
+.c-socials a {
+  color: var(--silver);
+  transition: color 0.3s;
+  display: flex;
+}
+.c-socials a:hover {
+  color: var(--butter);
+}
+
+.contact-form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-input {
+  width: 100%;
+  background: rgba(5, 5, 5, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 16px 20px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  cursor: none;
+}
+.form-input:focus {
+  outline: none;
+  border-color: rgba(245, 217, 122, 0.4);
+  box-shadow: 0 0 15px rgba(245, 217, 122, 0.1);
+}
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.form-submit {
+  width: 100%;
+  margin-top: 10px;
+}
+.form-note {
+  font-size: 0.75rem;
+  text-align: center;
+  color: rgba(216, 216, 216, 0.4);
+  margin-top: 10px;
+}
+
+.popular-badge {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: rgba(245, 217, 122, 0.15);
+  color: var(--butter);
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-left: 12px;
+  border: 1px solid rgba(245, 217, 122, 0.3);
+  vertical-align: middle;
+}
+.premium-row {
+  border-color: rgba(245, 217, 122, 0.2) !important;
+}
+
 /* ── mobile responsive styles ── */
 .nav-actions {
   display: flex;
@@ -1038,11 +1328,28 @@ footer p {
     flex-direction: column;
   }
   
+  /* Founder Story */
+  #founder { padding: 60px 20px; }
+  .founder-g { grid-template-columns: 1fr; gap: 40px; }
+  .founder-img-wrapper { padding-bottom: 100%; }
+
+  /* Gallery */
+  #gallery { padding: 60px 20px; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; gap: 15px; }
+
+  /* TikTok Teaser */
+  #tiktok-teaser { padding: 60px 20px; }
+  .tiktok-grid { grid-template-columns: 1fr; gap: 20px; }
+
+  /* Contact */
+  #contact { padding: 60px 20px; }
+  .contact-g { grid-template-columns: 1fr; gap: 40px; padding: 30px 20px; }
+
   /* Hide custom cursor on mobile */
   #cursor, .cursor-spark {
     display: none !important;
   }
-  html, body, a, button, .menu-row {
+  html, body, a, button, .menu-row, .gallery-item, .tiktok-item, .form-input {
     cursor: auto !important;
   }
 }

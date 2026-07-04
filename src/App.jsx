@@ -15,9 +15,12 @@ import Footer from './components/layout/Footer';
 
 // Section Components
 import Hero from './components/sections/Hero';
+import FounderStory from './components/sections/FounderStory';
 import Services from './components/sections/Services';
-import About from './components/sections/About';
+import Gallery from './components/sections/Gallery';
+import TikTokTeaser from './components/sections/TikTokTeaser';
 import Testimonials from './components/sections/Testimonials';
+import Contact from './components/sections/Contact';
 
 function App() {
   // Initialize custom mouse effects and interactions
@@ -37,9 +40,12 @@ function App() {
       <div id="page">
         <Navbar />
         <Hero />
+        <FounderStory />
         <Services />
-        <About />
+        <Gallery />
+        <TikTokTeaser />
         <Testimonials />
+        <Contact />
         <Footer />
       </div>
     </>
