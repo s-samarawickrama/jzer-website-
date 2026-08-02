@@ -17,7 +17,7 @@ const Navbar = () => {
       </div>
 
       <div className="nav-actions">
-        <button className="btn-book">Book Now</button>
+        <button className="btn-book" onClick={() => window.open('https://wa.me/94781468851', '_blank')}>Book Now</button>
         <button className="mobile-menu-btn" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={24} color="#fff" /> : <Menu size={24} color="#fff" />}
         </button>

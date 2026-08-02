@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="hero-content-bottom">
         <div className="hero-slogan">JEWEL OF YOUR BEAUTY</div>
         <div className="cta-row">
-          <button className="btn-p">Book Your Experience</button>
+          <button className="btn-p" onClick={() => window.open('https://wa.me/94781468851', '_blank')}>Book Your Experience</button>
           <button className="btn-g">Explore Services</button>
         </div>
       </div>

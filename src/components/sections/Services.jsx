@@ -55,7 +55,10 @@ const Services = () => {
           <span className="menu-icon"><ScissorsIcon size={24} /></span>
           <div className="menu-content">
             <div className="menu-title-row">
-              <span className="menu-name">Head Massage (20 Mins)</span>
+              <span className="menu-name">
+                Head Massage (20 Mins)
+                <span style={{ fontSize: '0.75em', color: '#ffb800', marginLeft: '10px', textTransform: 'uppercase', letterSpacing: '1px' }}>★ Highly Rated</span>
+              </span>
               <div className="menu-dots"></div>
               <span className="menu-price">800 LKR</span>
             </div>
@@ -69,7 +72,7 @@ const Services = () => {
             <div className="menu-title-row">
               <span className="menu-name">Hair Dyeing (Grey Coverage) with Hair Cut</span>
               <div className="menu-dots"></div>
-              <span className="menu-price">900 LKR</span>
+              <span className="menu-price">1000 LKR</span>
             </div>
           </div>
         </div>

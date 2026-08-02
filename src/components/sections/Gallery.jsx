@@ -1,5 +1,16 @@
 import React from 'react';
 
+const images = [
+  '/images/image.png',
+  '/images/image copy.png',
+  '/images/image copy 2.png',
+  '/images/image copy 3.png',
+  '/images/image copy 4.png',
+  '/images/image copy 5.png',
+  '/images/image copy 6.png',
+  '/images/image copy 7.png',
+];
+
 const Gallery = () => {
   return (
     <section id="gallery">
@@ -8,11 +19,14 @@ const Gallery = () => {
       <p className="gallery-sub">A closer look at the space, the craft, and the cuts</p>
       
       <div className="gallery-grid">
-        {[1, 2, 3, 4, 5, 6].map((i) => (
+        {images.map((src, i) => (
           <div key={i} className="gallery-item">
-            <div className="gallery-placeholder">
-              {/* Image Placeholder */}
-            </div>
+            <img 
+              src={src} 
+              alt={`Gallery image ${i + 1}`} 
+              className="gallery-placeholder" 
+              style={{ objectFit: 'cover', width: '100%', height: '100%' }} 
+            />
           </div>
         ))}
       </div>
