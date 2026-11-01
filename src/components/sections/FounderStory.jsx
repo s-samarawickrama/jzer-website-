@@ -5,9 +5,11 @@ const FounderStory = () => {
     <section id="founder">
       <div className="founder-g">
         <div className="founder-img-wrapper">
-          <div className="founder-placeholder">
-            {/* Image Placeholder */}
-          </div>
+          <img 
+            src="/Gemini_Generated_Image_rurdhcrurdhcrurd 3.png" 
+            alt="Founder Craftsmanship" 
+            className="founder-real-img"
+          />
         </div>
         <div className="founder-content">
           <span className="sec-label">The Vision</span>

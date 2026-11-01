@@ -5,18 +5,21 @@ const Hero = () => {
     <section id="hero">
       <div className="hero-banner-wrap">
         <picture>
-          <source media="(max-width: 768px)" srcSet="/Gemini_Generated_Image_rurdhcrurdhcrurd%203.png" />
-          <img src="/Gemini_Generated_Image_rurdhcrurdhcrurd (1).png" alt="Background" className="hero-banner-img" />
+          <source media="(max-width: 768px)" srcSet="/hero-banner.jpg" />
+          <img src="/hero-banner.jpg" alt="JZER Salon Hero" className="hero-banner-img" />
         </picture>
+        <div className="hero-vignette-overlay"></div>
       </div>
       
-      <img src="/jzer-logo-1.png" alt="JZER Salon Logo" className="hero-center-logo" />
+      <div className="hero-header-brand">
+        <img src="/jzer-logo-1.png" alt="JZER Salon Logo" className="hero-center-logo" />
+      </div>
 
       <div className="hero-content-bottom">
         <div className="hero-slogan">JEWEL OF YOUR BEAUTY</div>
         <div className="cta-row">
-          <button className="btn-p">Book Your Experience</button>
-          <button className="btn-g">Explore Services</button>
+          <a href="#services" className="btn-p">Explore Services</a>
+          <a href="#contact" className="btn-g">Book Your Experience</a>
         </div>
       </div>
     </section>
