@@ -5,6 +5,7 @@ export function useMouseEffects() {
     let mouseX = 0, mouseY = 0;
     
     const handleMouseMove = (e) => {
+      if (window.innerWidth <= 768) return;
       mouseX = e.clientX;
       mouseY = e.clientY;
       const cursor = document.getElementById('cursor');

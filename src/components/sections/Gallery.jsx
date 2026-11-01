@@ -44,11 +44,10 @@ const Gallery = () => {
     if (clientWidth === 0) return;
     const card = trackRef.current.children[0];
     const cardWidth = card ? card.offsetWidth : clientWidth;
-    const style = card ? window.getComputedStyle(trackRef.current) : null;
-    const gap = style ? (parseFloat(style.columnGap || style.gap) || 0) : 0;
-    const step = cardWidth + gap;
-    const index = step > 0 ? Math.round(scrollLeft / step) : 0;
-    setCurrent(Math.min(Math.max(index, 0), slides.length - 1));
+    if (!cardWidth) return;
+    const index = Math.round(scrollLeft / cardWidth);
+    const clamped = Math.min(Math.max(index, 0), slides.length - 1);
+    setCurrent((prev) => (prev !== clamped ? clamped : prev));
   };
 
   const scrollToSlide = (idx) => {
